@@ -10,18 +10,20 @@ import Breakfast from "./component/Breakfast/Breakfast";
 import Launch from "./component/Launch/Launch";
 import Diner from "./component/Diner/Diner";
 import NotFound from "../src/NotFound/NotFound";
+import Services from "./component/Services/Services";
 function App() {
   return (
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />}>
+          <Route path="breakfast" element={<Breakfast />}></Route>
+          <Route path="launch" element={<Launch />}></Route>
+          <Route path="diner" element={<Diner />}></Route>
+        </Route>
         <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />} />
-        <Route path="/breakfast" element={<Breakfast />} />
-        <Route path="/launch" element={<Launch />} />
-        <Route path="/diner" element={<Diner />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

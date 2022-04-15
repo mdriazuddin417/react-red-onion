@@ -1,9 +1,14 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
 const Services = () => {
   return (
     <div>
-      <h2>This is Services Component</h2>
+      <div className="d-flex justify-content-center gap-4 fs-5">
+        <Link to="breakfast">Breakfast</Link>
+      </div>
+
+      <Outlet />
     </div>
   );
 };

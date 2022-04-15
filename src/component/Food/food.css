@@ -1,0 +1,6 @@
+.food:hover {
+  transition: 0.3s;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
