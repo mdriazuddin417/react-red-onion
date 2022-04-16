@@ -11,6 +11,7 @@ function CustomLink({ children, to, ...props }) {
         style={{
           textDecoration: match ? "underline" : "none",
           textDecorationColor: match ? "tomato" : "",
+          color: match ? "tomato" : "black",
         }}
         to={to}
         {...props}

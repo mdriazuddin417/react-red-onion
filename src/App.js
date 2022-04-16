@@ -10,7 +10,7 @@ import Breakfast from "./component/Breakfast/Breakfast";
 import Launch from "./component/Launch/Launch";
 import Diner from "./component/Diner/Diner";
 import NotFound from "../src/NotFound/NotFound";
-import Services from "./component/Services/Services";
+
 function App() {
   return (
     <div>

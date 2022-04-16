@@ -1,0 +1,19 @@
+.login-form {
+  background-image: url(../../images/bannerbackground.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.login-form input {
+  width: 500px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(211, 211, 211, 0.329);
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+.login-form input:focus {
+  outline: none;
+}
