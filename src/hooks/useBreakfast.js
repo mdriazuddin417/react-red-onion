@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
-
+import { useQuery } from "react-query";
+import fetcher from "../api/fetcher";
+import Loading from "../Shared/Loading";
 const useBreakfast = () => {
-  const [foods, setFoods] = useState([]);
+  const {
+    data: foods,
+    isLoading,
+    refetch,
+  } = useQuery("Foods", async () => await fetcher.get("/breakfast"));
 
-  useEffect(() => {
-    fetch("breakfast.json")
-      .then((res) => res.json())
-      .then((data) => setFoods(data));
-  }, []);
-  return [foods, setFoods];
+  if (isLoading) {
+    <Loading />;
+  }
+  return [foods, refetch];
 };
 
 export default useBreakfast;

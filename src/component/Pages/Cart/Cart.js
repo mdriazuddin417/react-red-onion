@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Cart = () => {
   return (
     <div>
-      <h2>This is Cart component</h2>
+      <h2>Cart Section</h2>
     </div>
   );
 };
