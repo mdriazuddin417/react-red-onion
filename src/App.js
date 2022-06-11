@@ -14,13 +14,19 @@ import Loading from "./Shared/Loading";
 import fetcher from "./api/fetcher";
 import Login from "./component/Pages/Login";
 import SignUp from "./component/Pages/SignUp";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "./firebase.init";
 
 function App() {
+  const [user] = useAuthState(auth);
   const {
     data: cart,
     isLoading,
     refetch,
-  } = useQuery("cart", async () => await fetcher.get("/cart"));
+  } = useQuery(
+    "cart",
+    async () => await fetcher.get(`/cart?email=${user?.email}`)
+  );
   if (isLoading) {
     return <Loading />;
   }
