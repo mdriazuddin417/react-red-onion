@@ -1,44 +1,128 @@
 [
   {
     "id": 0,
-    "balance": "$39",
+    "balance": "39",
     "picture": "https://i.ibb.co/JQjvPZ7/breakfast2.png",
     "name": "Madeleine Buckner",
     "text": "Elit aliquip aliquip id anim anim aliqua culpa consequat sint laborum. Dolore incididunt cillum aliqua Lorem laboris veniam eu quis ipsum consequat. Occaecat duis est nisi Lorem eu ipsum mollit eaEt in aliqua sunt in est laborum. Laboris quis minim veniam incididunt veniam excepteur laborum."
   },
   {
     "id": 1,
-    "balance": "$33",
+    "balance": "33",
     "picture": "https://i.ibb.co/WzgVHgb/breakfast3.png",
     "name": "Rice Brown",
     "text": "Eiusmod esse ipsum consequat laboris ipsum dolor cillum commodo et dolor labore elit irure. Sint adipisicing minim qui labore aliquip cillum aliquip voluptate nisi minim.Ad incididunt elit voluptate exercitation culpa labore consectetur do officia irure do. "
   },
   {
     "id": 2,
-    "balance": "$19",
+    "balance": "19",
     "picture": "https://i.ibb.co/wh26vK4/breakfast4.png",
     "name": "Short Pearson",
     "text": "Eiusmod esse ipsum consequat laboris ipsum dolor cillum commodo et dolor labore elit irure. Sint adipisicing minim qui labore aliquip cillum aliquip voluptate nisi minim. Reprehenderit ad qui sunt amet fugiat tempor consequat. Cillum Lorem velit cupidatat consectetur et Lorem. Amet laborum minim mollit magna veniam. Reprehenderit do tempor incididunt incididunt exercitation aliquip.\r\n"
   },
   {
     "id": 3,
-    "balance": "$36",
+    "balance": "36",
     "picture": "https://i.ibb.co/QvSft5D/breakfast5.png",
     "name": "Humphrey Mills",
     "text": "Elit aliquip aliquip id anim anim aliqua culpa consequat sint laborum. Dolore incididunt cillum aliqua Lorem laboris veniam eu quis ipsum consequat. Occaecat duis est nisi Lorem eu ipsum mollit ea id anim laboris laborum. Lorem ea sunt ad do est aliquip tempor ex aliqua sint cillum cupidatat exercitation. In aliquip est laborum officia ad cillum commodo sint commodo dolore ullamco adipisicing fugiat mollit. Sint eiusmod pariatur quis ad anim consectetur aute pariatur dolor cillum. Elit elit ut quis sunt.\r\n"
   },
   {
     "id": 4,
-    "balance": "$17",
+    "balance": "17",
     "picture": "https://i.ibb.co/BCPnHMH/breakfast6.png",
     "name": "Huff Warren",
     "text": "Dolore non voluptate exercitation dolor ipsum cillum aliqua deserunt tempor commodo. Cupidatat culpa voluptate reprehenderit laboris occaecat ut. Amet exercitation commodo veniam pariatur qui nulla cillum. Pariatur tempor irure minim sint ea. Quis sit duis duis aliquip mollit incididunt dolore quis cillum quis mollit amet qui ipsum. Est labore ex veniam officia magna reprehenderit excepteur ad non. Tempor consequat deserunt quis ullamco eiusmod sunt ex ea consequat ad anim.\r\n"
   },
   {
     "id": 5,
-    "balance": "$25",
+    "balance": "25",
     "picture": "https://i.ibb.co/s2mqBQ6/breakfast1.png",
     "name": "Huff Warren",
     "text": "Dolore non voluptate exercitation dolor ipsum cillum aliqua deserunt tempor commodo. Cupidatat culpa voluptate reprehenderit laboris occaecat ut. Amet exercitation commodo veniam pariatur qui nulla cillum. Pariatur tempor irure minim sint ea. Quis sit duis duis aliquip mollit incididunt dolore quis cillum quis mollit amet qui ipsum. Est labore ex veniam officia magna reprehenderit excepteur ad non. Tempor consequat deserunt quis ullamco eiusmod sunt ex ea consequat ad anim.\r\n"
+  },
+  {
+    "id": 0,
+    "balance": "14",
+    "picture": "  https://i.ibb.co/nczB4pn/dinner1.png",
+    "name": "Bender Alvarado",
+    "text": "Veniam ut ad id reprehenderit do amet amet pariatur consectetur nisi. Est elit aliquip do culpa fugiat non. Cillum commodo officia in consectetur pariatur laboris pariatur fugiat exercitation do nisi. Nostrud commodo consectetur cillum adipisicing labore sint laborum. Amet occaecat aute ad ad.\r\n"
+  },
+  {
+    "id": 1,
+    "balance": "28",
+    "picture": "https://i.ibb.co/8jRQk3z/dinner2.png",
+    "name": "Nash Holt",
+    "text": "Nostrud in sunt ad officia ea Lorem exercitation labore est tempor. Consequat cupidatat velit qui nostrud deserunt eiusmod excepteur et. Labore elit non cupidatat ex dolore aute ea in nisi. Duis velit Lorem nisi deserunt excepteur magna irure ut nostrud laboris deserunt adipisicing nostrud ea. Ipsum consequat labore fugiat eiusmod ut voluptate. Minim et fugiat irure commodo laboris proident consectetur aliqua et consequat deserunt quis. Ut ipsum aliqua amet est fugiat cupidatat ad magna pariatur magna.\r\n"
+  },
+  {
+    "id": 2,
+    "balance": "21",
+    "picture": "https://i.ibb.co/kmLbyLz/dinner3.png",
+    "name": "Kara Boyd",
+    "text": "Deserunt qui adipisicing Lorem ullamco reprehenderit fugiat velit sit. Duis sunt sit nisi occaecat aliqua non est Lorem occaecat aliquip do. Aliqua irure dolor culpa voluptate non culpa aliqua ullamco deserunt reprehenderit elit. Reprehenderit non voluptate nulla ullamco veniam enim eu laborum. Magna excepteur ad nostrud ea cupidatat excepteur nulla ad.\r\n"
+  },
+  {
+    "id": 3,
+    "balance": "17",
+    "picture": "https://i.ibb.co/6ZY9DnK/dinner4.png",
+    "name": "Odom Rojas",
+    "text": "Excepteur laboris eu enim reprehenderit tempor tempor consequat ex commodo amet qui quis. Ullamco id eiusmod ut aute. Magna officia magna labore cillum laboris irure anim.\r\n"
+  },
+  {
+    "id": 4,
+    "balance": "18",
+    "picture": "https://i.ibb.co/BVcqNhD/dinner5.png",
+    "name": "Schwartz Foster",
+    "text": "Lorem labore officia enim ea duis ex ex sit ipsum non officia nisi nulla. Commodo duis nostrud est voluptate deserunt incididunt sunt ad. Ex veniam magna laborum cillum elit adipisicing est. Laborum non minim ad velit adipisicing. Non occaecat commodo cupidatat elit quis sit voluptate pariatur.\r\n"
+  },
+  {
+    "id": 5,
+    "balance": "15",
+    "picture": "https://i.ibb.co/FWK1KLJ/dinner6.png",
+    "name": "Barker Phillips",
+    "text": "Laborum officia irure cillum cillum occaecat aute ea velit consequat aliquip id. Enim voluptate eu qui nostrud anim magna ipsum sint in aliqua. Excepteur ex exercitation fugiat nisi esse amet. Dolore reprehenderit ipsum et ut non amet qui Lorem velit sunt do. Ea Lorem eu velit pariatur anim do. Cillum et incididunt tempor consectetur deserunt sunt consequat anim nostrud qui nulla. Veniam esse commodo magna esse in Lorem adipisicing excepteur aute aliquip sunt.\r\n"
+  },
+  {
+    "id": 0,
+    "balance": "12",
+    "picture": "https://i.ibb.co/mq0mBzT/lunch2.png",
+    "name": "Rosalind Reeves",
+    "text": "Sunt proident adipisicing aliqua eu ea occaecat ea Lorem consectetur Lorem velit. Labore Lorem laboris voluptate cupidatat proident irure ex. Ullamco eu excepteur voluptate eu in deserunt elit fugiat fugiat eiusmod do.\r\n"
+  },
+  {
+    "id": 1,
+    "balance": "28",
+    "picture": "https://i.ibb.co/LQ1b99L/lunch3.png",
+    "name": "Dickson Paul",
+    "text": "Et Lorem tempor qui ut velit aliqua pariatur aute nisi non eu cillum. Officia ut proident velit anim. Velit ut ea ad dolor consectetur. Ut do reprehenderit consectetur commodo. Esse laboris elit deserunt cupidatat nostrud exercitation sunt aliqua reprehenderit sint cillum. Dolor sint sit nulla consectetur. Incididunt anim eu amet enim commodo.\r\n"
+  },
+  {
+    "id": 2,
+    "balance": "21",
+    "picture": "https://i.ibb.co/LndgPVd/lunch4.png",
+    "name": "Mabel Foreman",
+    "text": "Mollit amet aliquip irure consectetur dolore in reprehenderit esse. Irure officia consequat reprehenderit ex elit tempor. Elit in exercitation esse nostrud deserunt Lorem occaecat minim. Nisi occaecat dolor ex velit eiusmod cupidatat do sunt id est. Anim excepteur ad ut adipisicing dolore.\r\n"
+  },
+  {
+    "id": 3,
+    "balance": "11",
+    "picture": "https://i.ibb.co/wy0Rc0j/lunch5.png",
+    "name": "Huffman Clarke",
+    "text": "Cillum labore est esse et labore aute. Qui non incididunt non commodo nostrud in ipsum dolore laborum eu elit laborum quis occaecat. Ad pariatur eu ipsum do commodo. Do quis aliqua mollit cupidatat irure et ipsum Lorem in anim elit ad. Exercitation ex irure voluptate exercitation exercitation consequat minim. Enim enim culpa consectetur incididunt qui magna.\r\n"
+  },
+  {
+    "id": 4,
+    "balance": "24",
+    "picture": "https://i.ibb.co/cX0nwhm/lunch6.png",
+    "name": "Grace Montgomery",
+    "text": "Anim est exercitation nulla anim consequat incididunt do ut. Commodo eu eiusmod elit deserunt magna voluptate. Dolore sit non exercitation eiusmod nulla mollit dolore velit fugiat velit aute ut ex. Ut ullamco aliqua aute est eiusmod excepteur elit.\r\n"
+  },
+  {
+    "id": 5,
+    "balance": "24",
+    "picture": "  https://i.ibb.co/RNDsq9n/lunch1.png",
+    "name": "Grace Montgomery",
+    "text": "Anim est exercitation nulla anim consequat incididunt do ut. Commodo eu eiusmod elit deserunt magna voluptate. Dolore sit non exercitation eiusmod nulla mollit dolore velit fugiat velit aute ut ex. Ut ullamco aliqua aute est eiusmod excepteur elit.\r\n"
   }
 ]

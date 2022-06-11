@@ -3,7 +3,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo2.png";
 import { FiShoppingCart } from "react-icons/fi";
-const Header = () => {
+import fetcher from "../../api/fetcher";
+import { useQuery } from "react-query";
+import Loading from "../Loading";
+const Header = ({ count }) => {
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -34,7 +37,14 @@ const Header = () => {
               </li>
               <li>
                 <NavLink to={"/cart"}>
-                  <FiShoppingCart />
+                  <div class="indicator">
+                    <span class="indicator-item badge badge-secondary">
+                      {count}
+                    </span>
+                    <button class="btn">
+                      <FiShoppingCart />
+                    </button>
+                  </div>
                 </NavLink>
               </li>
 
@@ -57,7 +67,14 @@ const Header = () => {
             </li>
             <li>
               <NavLink to={"/cart"}>
-                <FiShoppingCart />
+                <div class="indicator">
+                  <span class="indicator-item indicator-top indicator-end badge badge-secondary">
+                    {count}
+                  </span>
+                  <span class=" text-2xl">
+                    <FiShoppingCart />
+                  </span>
+                </div>
               </NavLink>
             </li>
 

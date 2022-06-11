@@ -8,11 +8,26 @@ import Cart from "./component/Pages/Cart/Cart";
 import Breakfast from "./component/Pages/Home/Breakfast";
 import Launch from "./component/Pages/Home/Launch";
 import Diner from "./component/Pages/Home/Diner";
+import Purchase from "./component/Pages/Home/Purchase";
+import { useQuery } from "react-query";
+import Loading from "./Shared/Loading";
+import fetcher from "./api/fetcher";
 
 function App() {
+  const {
+    data: cart,
+    isLoading,
+    refetch,
+  } = useQuery("cart", async () => await fetcher.get("/cart"));
+  if (isLoading) {
+    return <Loading />;
+  }
+
+  const count = cart?.data.length;
+  const carts = cart?.data;
   return (
     <div className="max-w-7xl mx-auto lg:px-12">
-      <Header />
+      <Header count={count} />
       <Routes>
         <Route path="/" element={<Home />}>
           <Route index element={<Breakfast />}></Route>
@@ -20,7 +35,14 @@ function App() {
           <Route path="/launch" element={<Launch />}></Route>
           <Route path="/diner" element={<Diner />}></Route>
         </Route>
-        <Route path="/cart" element={<Cart />}></Route>
+        <Route
+          path="/purchase/:id"
+          element={<Purchase refetch={refetch} />}
+        ></Route>
+        <Route
+          path="/cart"
+          element={<Cart carts={carts} refetch={refetch} />}
+        ></Route>
       </Routes>
       <ToastContainer />
     </div>
