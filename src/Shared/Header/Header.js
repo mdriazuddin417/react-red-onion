@@ -3,10 +3,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../images/logo2.png";
 import { FiShoppingCart } from "react-icons/fi";
-import fetcher from "../../api/fetcher";
-import { useQuery } from "react-query";
-import Loading from "../Loading";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 const Header = ({ count }) => {
+  const [user] = useAuthState(auth);
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -30,7 +31,7 @@ const Header = ({ count }) => {
             </label>
             <ul
               tabIndex="0"
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 space-y-3"
             >
               <li>
                 <NavLink to={"/breakfast"}>Home</NavLink>
@@ -41,19 +42,34 @@ const Header = ({ count }) => {
                     <span class="indicator-item badge badge-secondary">
                       {count}
                     </span>
-                    <button class="btn">
+                    <span className="text-2xl">
                       <FiShoppingCart />
-                    </button>
+                    </span>
                   </div>
                 </NavLink>
               </li>
 
-              <li>
-                <NavLink to={"/login"}>Log In</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/signup"}>SignUp</NavLink>
-              </li>
+              {user ? (
+                <>
+                  <li>
+                    <button
+                      className="btn btn-accent"
+                      onClick={() => signOut(auth)}
+                    >
+                      Log Out
+                    </button>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li>
+                    <NavLink to={"/login"}>Log In</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to={"/signup"}>SignUp</NavLink>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
           <NavLink to={"/breakfast"}>
@@ -61,7 +77,7 @@ const Header = ({ count }) => {
           </NavLink>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal p-0">
+          <ul className="menu menu-horizontal p-0 space-x-5">
             <li>
               <NavLink to={"/breakfast"}>Home</NavLink>
             </li>
@@ -78,12 +94,27 @@ const Header = ({ count }) => {
               </NavLink>
             </li>
 
-            <li>
-              <NavLink to={"/login"}>Log In</NavLink>
-            </li>
-            <li>
-              <NavLink to={"/signup"}>SignUp</NavLink>
-            </li>
+            {user ? (
+              <>
+                <li>
+                  <button
+                    className="btn btn-accent"
+                    onClick={() => signOut(auth)}
+                  >
+                    Log Out
+                  </button>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <NavLink to={"/login"}>Log In</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/signup"}>SignUp</NavLink>
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </div>

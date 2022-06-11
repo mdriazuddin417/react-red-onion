@@ -12,6 +12,8 @@ import Purchase from "./component/Pages/Home/Purchase";
 import { useQuery } from "react-query";
 import Loading from "./Shared/Loading";
 import fetcher from "./api/fetcher";
+import Login from "./component/Pages/Login";
+import SignUp from "./component/Pages/SignUp";
 
 function App() {
   const {
@@ -43,6 +45,8 @@ function App() {
           path="/cart"
           element={<Cart carts={carts} refetch={refetch} />}
         ></Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <ToastContainer />
     </div>
